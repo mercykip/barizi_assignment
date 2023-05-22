@@ -1,8 +1,16 @@
+import 'package:flutter/material.dart';
+
 class Products {
   final String title;
   final String imageUrl;
+  final Color? bgColor;
+  final Color borderColor;
 
-  Products({required this.title, required this.imageUrl});
+  Products(
+      {required this.title,
+      required this.imageUrl,
+      required this.bgColor,
+      required this.borderColor});
 }
 
 class Favourite {

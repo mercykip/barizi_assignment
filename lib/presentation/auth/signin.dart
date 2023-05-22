@@ -64,7 +64,12 @@ class _SignInState extends State<SignIn> {
                         width: 300,
                         height: 65,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(
+                              context,
+                              '/home',
+                            );
+                          },
                           style: ButtonStyle(
                             backgroundColor: getButtonColor(googleBgColors),
                             shape: MaterialStateProperty.all<
@@ -92,7 +97,12 @@ class _SignInState extends State<SignIn> {
                         width: 300,
                         height: 65,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(
+                              context,
+                              '/home',
+                            );
+                          },
                           style: ButtonStyle(
                             backgroundColor: getButtonColor(facebookBgColors),
                             shape: MaterialStateProperty.all<

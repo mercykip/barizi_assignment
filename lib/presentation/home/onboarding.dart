@@ -1,14 +1,15 @@
+import 'package:barizi_assignment/utils/constants.dart';
 import 'package:barizi_assignment/utils/custom_colors.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class OnboardingPage extends StatefulWidget {
+  const OnboardingPage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<OnboardingPage> createState() => _OnboardingPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _OnboardingPageState extends State<OnboardingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,9 +26,9 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset("assets/images/Vector.png"),
+            Image.asset("assets/images/carrots.png"),
             const Text(
-              'Welcome to our store',
+              welcomeToStore,
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontSize: 34,
@@ -35,7 +36,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.white),
             ),
             const Text(
-              'Get your  groceries in as fast as one hour',
+              getGroceries,
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 12, color: Colors.white),
             ),
@@ -43,8 +44,8 @@ class _HomePageState extends State<HomePage> {
               height: 20,
             ),
             SizedBox(
-              width: 300, // <-- Your width
-              height: 50, // <-- Your height
+              width: 300,
+              height: 50,
               child: TextButton(
                   style: ButtonStyle(
                       padding: MaterialStateProperty.all<EdgeInsets>(
@@ -61,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                       '/signin',
                     );
                   },
-                  child: Text("Get Started".toUpperCase(),
+                  child: Text(getStarted.toUpperCase(),
                       style:
                           const TextStyle(fontSize: 14, color: Colors.white))),
             ),

@@ -1,4 +1,6 @@
 import 'package:barizi_assignment/presentation/auth/signin.dart';
+import 'package:barizi_assignment/presentation/home/home.dart';
+import 'package:barizi_assignment/presentation/home/onboarding.dart';
 import 'package:barizi_assignment/presentation/products/favorite_product.dart';
 import 'package:barizi_assignment/presentation/products/products_page.dart';
 import 'package:flutter/material.dart';
@@ -20,9 +22,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        '/': (context) => const ProductsPage(),
+        '/': (context) => const OnboardingPage(),
         '/signin': (context) => const SignIn(),
         '/products': (context) => const ProductsPage(),
+         '/home': (context) => const HomePage(),
         '/favourite_product': (context) => const FavouriteProducts(),
       },
     );
